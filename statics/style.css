@@ -1,0 +1,128 @@
+:root {
+    --bg: #10131a;
+    --panel: #171b24;
+    --text: #e8ecf8;
+    --accent: #6ea8fe;
+    --accent-2: #9b8cff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #0d1117, #141a25);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 860px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--panel);
+    border: 1px solid #2b3448;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    
+}
+.container .logo-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 50% 0% 90% 50%;
+}
+
+h1 {
+    margin-top: 0;
+    color: #f4f7ff;
+}
+
+.logo {
+    font-size: 0.72rem;
+    white-space: pre;
+    color: #a5b4d6;
+    overflow-x: auto;
+    background: #0f141e;
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: #f7faff;
+}
+
+.emoji-logo {
+    margin: 1rem 0 1.3rem;
+    font-size: 1.1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    background: linear-gradient(135deg, #1d2434, #1b1f2f);
+    border: 1px solid #303a53;
+    border-radius: 12px;
+    padding: 1.1rem;
+    font-weight: 700;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.back {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+  
+}
+
+textarea {
+    width: 100%;
+    min-height: 125px;
+    border-radius: 10px;
+    border: 1px solid #38435d;
+    background: #0e131d;
+    color: var(--text);
+    padding: 0.8rem;
+    resize: vertical;
+}
+
+.controls {
+    margin: 0.8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.6rem 0.9rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+}
+
+pre#outputBox {
+    background: #0e131d;
+    border: 1px dashed #3c4864;
+    border-radius: 10px;
+    padding: 0.8rem;
+    min-height: 72px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}

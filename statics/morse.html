@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Converter</title>
+    <link rel="stylesheet" href="../statics/style.css" />
+</head>
+<body>
+    <main class="container converter" data-type="morse">
+        <a href="../index.html" class="back">← Back Home</a>
+        <h1>S---S DotDash</h1>
+        <p>Convert Text ↔ Morse Code</p>
+        <textarea id="inputText" placeholder="Type text or morse..."></textarea>
+        <div class="controls">
+            <button data-mode="encode">Text → Morse</button>
+            <button data-mode="decode">Morse → Text</button>
+        </div>
+        <h3>Output</h3>
+        <pre id="outputBox">Your result will appear here...</pre>
+        <p> Example: Hello → .... . .-.. .-.. ---</p>
+    </main>
+    <script src="../statics/script.js"></script>
+</body>
+</html>
